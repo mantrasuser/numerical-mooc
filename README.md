@@ -39,13 +39,17 @@ Computational techniques: more array operations with NumPy and symbolic computin
 Starting with an overview of the concept of conservation laws, this module uses the traffic-flow model to study different solutions methods for problems with shocks: upwind, Lax-Friedrichs, Lax-Wendroff, MacCormack, then MUSCL (discussing limiters). Reinforces concepts of numerical diffusion and stability, in the context of solutions with shocks.  It will motivate spectral analysis of schemes, dispersion errors, Gibbs phenomenon, conservative schemes.
 4. [**Spreading out: diffusion problems.**](https://github.com/numerical-mooc/numerical-mooc/tree/master/lessons/04_spreadout)
 This module deals with solutions to parabolic PDEs, exemplified by the diffusion (heat) equation. Starting with the 1D heat equation, we learn the details of implementing boundary conditions and are introduced to implicit schemes for the first time. Another first in this module is the solution of a two-dimensional problem. The 2D heat equation is solved with both explicit and implict schemes, each time taking special care with boundary conditions. The final lesson builds solutions with a Crank-Nicolson scheme. 
-5. **Relax and hold steady: elliptic problems.**
-Laplace and Poisson equations (steps 9 and 10 of “CFD Python”), explained as systems relaxing under the influence of the boundary conditions and the Laplace operator; introducing the idea of pseudo-time and iterative methods. Linear solvers for PDEs : Jacobi’s method, slow convergence of low-frequency modes (matrix analysis of Jacobi), Jacobi as a smoother, Multigrid.
+5. [**Relax and hold steady: elliptic problems.**](https://github.com/numerical-mooc/numerical-mooc/tree/master/lessons/05_relax)
+Laplace and Poisson equations (steps 9 and 10 of “CFD Python”), seen as systems relaxing under the influence of the boundary conditions and the Laplace operator. Iterative methods for algebraic equations resulting from discretizign PDEx: Jacobi method, Gauss-Seidel and successive over-relaxation methods. Conjugate gradient methods.
 6. **Perform like a pro: making your codes run faster**
 Getting performance out of your numerical Python codes with just-in-time compilation, targeting GPUs with Numba and PyCUDA.
 
 Planned module (not yet started):
 - **Boundaries take over: the boundary element method (BEM).**
 Weak and boundary integral formulation of elliptic partial differential equations; the free space Green's function. Boundary discretization: basis functions; collocation and Galerkin systems. The BEM stiffness matrix: dense versus sparse;  matrix conditioning. Solving the BEM system: singular and near-singular integrals; Gauss quadrature integration.
+
+##Sponsors
+
+The initial deployment of the GW Open edX instance and the creation of the first course in the platform (Fall 2014) were funded with support from sponsors Nvidia Corp. and Amazon AWS.
 
 
